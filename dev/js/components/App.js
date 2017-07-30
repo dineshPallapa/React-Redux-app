@@ -1,16 +1,21 @@
 import React from 'react';
-import UserList from '../containers/user-list';
-import UserDetails from '../containers/user-detail';
-require('../../scss/style.scss');
-
-const App = () => (
-    <div>
-        <h2>User List</h2>
+import UserList from '../containers/user-details'
+import UserDetails from '../containers/user-list'
+class App extends React.Component {
+  render() {
+    return(
+      <div>
+        <h1> Redux ur complete</h1> <hr />
+        <h1> user list</h1>
+        <h1> user selected</h1>
         <UserList />
-        <hr />
-        <h2>User Details</h2>
         <UserDetails />
-    </div>
-);
 
-export default App;
+      </div>
+    );
+  }
+}
+
+
+
+export default App
