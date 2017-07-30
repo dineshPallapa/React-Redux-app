@@ -1,6 +1,8 @@
 import React from 'react';
-import UserList from '../containers/user-details'
-import UserDetails from '../containers/user-list'
+import UserList from '../containers/user-details';
+import UserDetails from '../containers/user-list';
+import CoursePage from '../containers/coursePage';
+
 class App extends React.Component {
   render() {
     return(
@@ -10,7 +12,7 @@ class App extends React.Component {
         <h1> user selected</h1>
         <UserList />
         <UserDetails />
-
+        <CoursePage />
       </div>
     );
   }

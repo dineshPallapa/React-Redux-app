@@ -1,11 +1,4 @@
 export default function() {
-
-  fetch('https://jsonblob.com/api/7805c137-7143-11e7-9e0d-c7eca8491d5f').then(function (response) {
-    response.json().then(function (data) {
-      return data
-      console.log(data)
-    });
-  })
   return [
     {
       id: 1,
