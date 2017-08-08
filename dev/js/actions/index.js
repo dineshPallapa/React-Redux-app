@@ -1,7 +1,9 @@
-export const selectUser = (user) => {
-  console.log(user.first)
-  return{
-    type: "USER_SELECTED",
-    payload: user 
+export const handleClick = (id) => {
+  console.log(id)
+  return {
+    type: "ADD_TO_CART",
+    payload: id 
   }
-}
+} 
+
+export default handleClick;

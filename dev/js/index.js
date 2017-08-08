@@ -1,22 +1,25 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from "react-dom";
+import {createStore} from 'redux';
 import {Provider} from "react-redux";
-import {createStore,applyMiddleware} from "redux";
-import allReducers from "./reducers";
-import App from './components/App';
-import reduxImmutableStateInvariant from 'redux-immutable-state-invariant'
+import allReducers from './reducer/index';
+import Products from './containers/Products'
+import Counter from './containers/Counter'
 
+let store = createStore(allReducers)
 
-export default function configureStore(initialState) {
-  return createStore(
-    allReducers,
-    initialState,
-    applyMiddleware(reduxImmutableStateInvariant())
-  );
+class App extends React.Component{
+  render() {
+    return(
+      <div>
+        <Counter />
+      </div>
+    )
+  }
 }
-const store = configureStore();
+
 ReactDOM.render(
-        <Provider store={store}>
-          <App />
-        </Provider>,document.getElementById('root'));
+            <Provider store={store}>
+              <App />
+            </Provider>,document.getElementById('root'));
