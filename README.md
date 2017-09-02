@@ -2,6 +2,8 @@
 
 # React/Sass/Redux Boilerplate
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/dineshPallapa/React-Redux-app.svg)](https://greenkeeper.io/)
+
 Boilerplate and guide for a React/Sass/Redux build.
 
 ## Getting Started
