@@ -1,6 +1,6 @@
 import React from 'react';
 
-export class CounterButton extends React.Component {
+export default class CounterButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {count: 1};

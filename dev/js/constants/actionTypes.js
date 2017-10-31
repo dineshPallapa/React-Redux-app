@@ -1,3 +1,0 @@
-export const CREATE_COURSE = "CREATE_COURSE"
-export const USER_SELECTED = "USER_SELECTED"
-export const CREATE_BOOK = "CREATE_BOOK"
